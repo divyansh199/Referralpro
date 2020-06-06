@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Naaniz Restuarant</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="notifications">Notifications</string>
+    <string name="customers">Customers</string>
+    <string name="profile">Profile</string>
+    <string name="veg">Veg</string>
+    <string name="non_veg">Non Veg</string>
+    <string name="my_menu">My Menu</string>
+    <string name="current_menu">Current Menu</string>
+    <string name="request">Request</string>
+    <string name="add_an_item">ADD AN ITEM</string>
+    <string name="add_edit_a_category">Add/Edit a category</string>
+    <string name="REFERRAL_AGENT">REFERRAl AGENT</string>
+    <string name="Add_Agents">Add Agents</string>
+    <string name="Current_Agents">Current Agents</string>
+    <string name="get_agents_to_boost_your_business">Get agents to boost your business!</string>
+
+    <string name="generate_code">GENERATE CODE</string>
+    <string name="current_agents">Current_Agents</string>
+    <string name="add_agents">Add Agents</string>
+    <string name="send_invites">SEND INVITES</string>
+    <string name="invite_your_customers">Invite your customers!</string>
+    <string name="send_invites_to_your_customers_to_give_them_a_personalised_exprience">Send invites to your Customers to give them a personalised exprience.</string>
+    <string name="send_to_agents">SEND TO AGENTS</string>
+    <string name="copy">COPY</string>
+    <string name="generate_and_share_the_code_below_with_your_agents_which_the_customers_will_add_on_their_sign_up_you_are_sharing_the_restaurant_uid_and_you_menu_on_adding_them_ad_agents">Generate and share the code behelow with your agents which the customers will add on their sign up.You are sharing the Restaurant UID and you menu on adding them ad agents.</string>
+    <string name="name">Name</string>
+    <string name="button">Button</string>
+    <string name="generate_and_share_the_code_behelow_with_your_agents_which_the_customers_will_add_on_their_sign_up_you_are_sharing_the_restaurant_uid_and_you_menu_on_adding_them_ad_agents" />
+    <string name="todo">TODO</string>
+</resources>

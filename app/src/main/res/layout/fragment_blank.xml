@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BlankFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tabLayout2">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/back_button" />
+
+            <TextView
+                android:id="@+id/my_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/REFERRAL_AGENT"
+                android:textAppearance="@style/my_menu"
+                android:textSize="25sp"
+
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout2"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="113dp"
+            android:background="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/title">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/current_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_agents" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_agents" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <LinearLayout
+            android:id="@+id/referral1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="०dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout2"
+
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/im1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="0dp"
+
+                android:layout_marginStart="100dp"
+                android:contentDescription="@string/todo" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="०dp"
+            android:layout_marginBottom="०dp"
+            android:background="@color/background_white"
+            android:text="@string/get_agents_to_boost_your_business"
+            android:textAppearance="@style/my_menu"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/referral1"
+            app:layout_constraintVertical_bias="0.069"
+            tools:layout_editor_absoluteX="०dp" />
+
+        <TextView
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+
+            android:hint="@string/generate_and_share_the_code_below_with_your_agents_which_the_customers_will_add_on_their_sign_up_you_are_sharing_the_restaurant_uid_and_you_menu_on_adding_them_ad_agents"
+            android:textAppearance="@style/my_menu"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box1"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="@string/generate_code"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="@style/my_menu"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box1"
+            app:layout_constraintVertical_bias="0.438"
+            android:layout_marginStart="25dp" />
+
+        <TextView
+            android:id="@+id/box4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/rectangle_edit"
+            android:hint="@string/copy"
+            android:textAlignment="viewEnd"
+            android:textAppearance="@style/my_menu"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box1"
+            app:layout_constraintVertical_bias="0.6"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="०dp"
+            android:layout_marginBottom="०dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="@string/send_to_agents"
+            android:textColor="@color/background_white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box4"
+            app:layout_constraintVertical_bias="0.178"
+            tools:layout_editor_absoluteX="१dp"
+            android:background="@drawable/rectangle2"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
